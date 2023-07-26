@@ -17,6 +17,9 @@ class Main: ModInitializer {
 	// Runs when the mod has initialized...
 	override fun onInitialize() {
 		LOGGER.info( "Library v${ getModVersion() } initialized." )
+
+		LOGGER.info( "Running Java v${ getJavaVersion() }, Minecraft v${ getMinecraftVersion() }, Fabric Loader v${ getFabricLoaderVersion() }, Fabric API v${ getFabricAPIVersion() }, Fabric Language Kotlin v${ getFabricLanguageKotlinVersion() }." )
+		LOGGER.info( "The current date & time is '${ getCurrentDateTimeInUTC() }' (ISO-8601: ${ getCurrentDateTimeInUTCAsISO8601() })." )
 	}
 
 }
