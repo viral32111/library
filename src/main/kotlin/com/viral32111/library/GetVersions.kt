@@ -27,7 +27,7 @@ fun getJavaVersion(): String = System.getProperty( "java.version" )
  * @return The Minecraft version.
  * @since 0.1.0
  */
-fun getMinecraftVersion(): String = MinecraftVersion.CURRENT.id
+fun getMinecraftVersion(): String = MinecraftVersion.CURRENT.name
 
 /**
  * Gets the version of the Fabric Loader.
