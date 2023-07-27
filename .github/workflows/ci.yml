@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-22.04
     permissions:
       contents: read
-      packages: read
+      packages: write
     steps:
       - name: Clone repository
         uses: actions/checkout@v3
