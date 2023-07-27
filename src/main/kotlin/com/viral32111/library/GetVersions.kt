@@ -12,7 +12,7 @@ import net.minecraft.MinecraftVersion
  */
 fun getModVersion( modIdentifier: String = Main.MOD_ID, fabricLoader: FabricLoader = FabricLoader.getInstance() ): String =
 	fabricLoader.getModContainer( modIdentifier ).orElseThrow {
-		throw IllegalStateException( "Container for mod with ID '${ modIdentifier }' not found" )
+		throw IllegalStateException( "Container for mod with ID '$modIdentifier' not found" )
 	}.metadata.version.friendlyString
 
 /**
