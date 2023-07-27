@@ -1,9 +1,11 @@
 package com.viral32111.library
 
+import java.text.NumberFormat
 import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 // UTC time-zone & default human-readable format
 private val utcZone = ZoneId.of( "UTC" )
@@ -42,7 +44,7 @@ fun Long.toHumanReadableTime(): String = listOf(
 	this % 60 to "second"
 )
 	.filter { it.first > 0 }
-	.joinToString( ", " ) { "${ it.first } ${ it.second }${ if ( it.first > 1 ) "s" else "" }" }
+	.joinToString( ", " ) { "${ NumberFormat.getNumberInstance( Locale.ENGLISH ).format( it.first ) } ${ it.second }${ if ( it.first > 1 ) "s" else "" }" }
 	.ifEmpty { "less than a second" }
 
 /**
