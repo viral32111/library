@@ -1,7 +1,7 @@
 # Library
 
-[![CI](https://github.com/viral32111/events/actions/workflows/ci.yml/badge.svg)](https://github.com/viral32111/library/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/viral32111/events/actions/workflows/codeql.yml/badge.svg)](https://github.com/viral32111/library/actions/workflows/codeql.yml)
+[![CI](https://github.com/viral32111/library/actions/workflows/ci.yml/badge.svg)](https://github.com/viral32111/library/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/viral32111/library/actions/workflows/codeql.yml/badge.svg)](https://github.com/viral32111/library/actions/workflows/codeql.yml)
 ![GitHub tag (with filter)](https://img.shields.io/github/v/tag/viral32111/library?label=Latest)
 ![GitHub repository size](https://img.shields.io/github/repo-size/viral32111/library?label=Size)
 ![GitHub release downloads](https://img.shields.io/github/downloads/viral32111/library/total?label=Downloads)
