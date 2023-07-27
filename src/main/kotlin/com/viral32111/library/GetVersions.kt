@@ -41,11 +41,13 @@ fun getFabricLoaderVersion(): String = getModVersion( "fabricloader" )
  * @return The mod version.
  * @since 0.1.0
  */
-fun getFabricAPIVersion( stripSuffix: Boolean = false ): String = getModVersion( "fabric-api" ).apply { if ( stripSuffix ) this.split( "+" ).first() }
+fun getFabricAPIVersion( stripSuffix: Boolean = false ): String =
+	getModVersion( "fabric-api" ).let { if ( stripSuffix ) it.split( "+", limit = 2 ).first() else it }
 
 /**
  * Gets the version of the Fabric Language Kotlin mod.
  * @return The mod version.
  * @since 0.1.0
  */
-fun getFabricLanguageKotlinVersion( stripSuffix: Boolean = false ): String = getModVersion( "fabric-language-kotlin" ).apply { if ( stripSuffix ) this.split( "+" ).first() }
+fun getFabricLanguageKotlinVersion( stripSuffix: Boolean = false ): String =
+	getModVersion( "fabric-language-kotlin" ).let { if ( stripSuffix ) it.split( "+", limit = 2 ).first() else it }
