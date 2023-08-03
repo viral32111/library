@@ -3,9 +3,9 @@ name: CI
 on:
   push:
     paths:
-      - 'gradle/**'
+      - 'gradle/**/*'
       - 'gradle*'
-      - 'src/**'
+      - 'src/**/*'
       - '*.gradle.kts'
       - 'gradle.properties'
       - '.github/workflows/ci.yml'
