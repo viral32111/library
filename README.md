@@ -9,11 +9,11 @@
 
 This is a [Minecraft Fabric](https://fabricmc.net/) mod that houses the shared code across my other mods.
 
-This mod does not anything by itself, it is designed as a dependency for my other mods.
+This mod does nothing by itself, it is a dependency for my other mods.
 
 ## 🖥️ Documentation
 
-**Coming soon.**
+Coming soon.
 
 ## 📥 Usage
 

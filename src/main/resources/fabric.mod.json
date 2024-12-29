@@ -1,18 +1,18 @@
 {
 	"schemaVersion": 1,
-
 	"id": "library",
 	"version": "${ version }",
-
 	"name": "Library",
 	"description": "Shared code for my Minecraft mods.",
-	"authors": [ {
-		"name": "viral32111",
-		"contact": {
-			"homepage": "https://viral32111.com",
-			"email": "contact@viral32111.com"
+	"authors": [
+		{
+			"name": "viral32111",
+			"contact": {
+				"homepage": "https://viral32111.com",
+				"email": "contact@viral32111.com"
+			}
 		}
-	} ],
+	],
 	"contributors": [],
 	"contact": {
 		"homepage": "https://github.com/viral32111/library",
@@ -20,16 +20,16 @@
 		"issues": "https://github.com/viral32111/library/issues"
 	},
 	"license": "AGPL-3.0-only",
-
 	"environment": "*",
 	"entrypoints": {
-		"main": [ {
-			"adapter": "kotlin",
-			"value": "com.viral32111.library.Main"
-		} ]
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "com.viral32111.library.Main"
+			}
+		]
 	},
 	"mixins": [],
-
 	"depends": {
 		"java": ">=${ java }",
 		"minecraft": ">=${ minecraft }",
@@ -38,5 +38,4 @@
 		"fabric-language-kotlin": ">=${ fabric_language_kotlin }"
 	},
 	"suggests": {}
-
 }
