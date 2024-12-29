@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-@Suppress("UNUSED")
 class Main : ModInitializer {
 
     // A logger writes text to the console & log file.
@@ -28,7 +27,7 @@ class Main : ModInitializer {
         LOGGER.info(
             "The current date & time is ${getCurrentDateTimeInUTC()} (ISO-8601: ${getCurrentDateTimeInUTCAsISO8601()}). It has been ${
                 System.currentTimeMillis().div(1000).toHumanReadableTime()
-            } since the epoch."
+            } since the 1st of January 1970 UTC."
         )
     }
 
